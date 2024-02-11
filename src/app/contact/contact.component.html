@@ -8,5 +8,9 @@
       <textarea placeholder="Message" [(ngModel)]="message" name="message" required></textarea><br />
       <button type="submit">Say Hello</button>
     </form>
+    <div *ngIf="loading" class="spinner"> 
+      <mat-spinner></mat-spinner>
+    </div>
+    
   </div>
 </div>

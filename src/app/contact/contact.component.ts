@@ -1,12 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { EmailService } from '../services/email.service';
 import { FormsModule, NgForm } from '@angular/forms';
 import { MatSnackBar as SnackBar } from '@angular/material/snack-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ FormsModule ],
+  imports: [ FormsModule, CommonModule, MatProgressSpinnerModule ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css',
   providers: [ EmailService ]
@@ -26,8 +28,12 @@ export class ContactComponent {
     form.resetForm(); 
   }
 
+  loading = false;
+
   public sendEmail(e: Event) {
     e.preventDefault();
+
+    this.loading = true;
 
     const formData = new FormData(e.target as HTMLFormElement);
     const params = {
@@ -39,13 +45,13 @@ export class ContactComponent {
     this.emailService
     .sendEmail(params)
     .then(() => {
-      // Show a success message to the user
+      this.loading = false;
       this.snackBar.open('Email sent successfully!', 'Close', {
-        duration: 3000, // Show the message for 3 seconds
+        duration: 5000, // Show the message for 3 seconds
       });
     })
     .catch((error) => {
-      // Show an error message to the user
+      this.loading = false;
       this.snackBar.open('Failed to send email. Please try again later.', 'Close', {
         duration: 5000, // Show the message for 5 seconds
       });
