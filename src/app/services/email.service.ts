@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import * as emailjs from 'emailjs-com';
 import { EmailJSResponseStatus } from 'emailjs-com';
-import { environment } from '../../environment';
+// import { environment } from '../../environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmailService {
   
-  emailJsApiKey: string = environment.emailJsApiKey;
+  // emailJsApiKey: string = environment.emailJsApiKey;
 
   constructor() { }
 
