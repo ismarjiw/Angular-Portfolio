@@ -1,0 +1,39 @@
+.all-projects {
+    margin-left: 15rem;
+}
+
+.project-stack {
+color: #f0b26f;
+font-weight: 800;
+}
+
+.image {
+    height: 410px;
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .project-image img {
+      opacity: 1;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+  }
+  
+  .project-image img:hover {
+      opacity: .5;
+  }
+
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    color: #fefefe;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}

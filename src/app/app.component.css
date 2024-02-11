@@ -1,0 +1,47 @@
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 20px; /* Increase padding for better touch experience */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Take up full width */
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0; /* Add vertical padding */
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  nav {
+    width: 200px; /* Adjust width for larger screens */
+    padding: 10px; /* Decrease padding for smaller screens */
+  }
+
+  nav a {
+    padding: 10px 20px; /* Adjust padding for larger screens */
+  }
+}
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }

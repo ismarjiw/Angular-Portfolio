@@ -1,0 +1,9 @@
+<app-project
+    *ngFor="let project of projects"
+    [name]="project.name"
+    [description]="project.description"
+    [stack]="project.stack"
+    [codeUrl]="project.codeUrl"
+    [imageUrl]="project.imageUrl"
+    [altText]="project.altText"
+></app-project>

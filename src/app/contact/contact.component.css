@@ -1,0 +1,21 @@
+.contact-container {
+    margin-left: 15rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    width: 55%;
+    margin-left: 350px;
+    margin-bottom: 150px;
+}
+
+.contact-form input, textarea{
+    width: 60%; 
+    border-radius: 10px;
+}
+
+.contact-form button {
+    width: 30%;
+}

@@ -1,0 +1,26 @@
+.all-projects {
+    margin-left: 12rem;
+}
+
+.project-stack {
+color: #f0b26f;
+font-weight: 800;
+}
+
+.image {
+    height: 410px;
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .project-image img {
+      opacity: 1;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+  }
+  
+  .project-image img:hover {
+      opacity: .5;
+  }
