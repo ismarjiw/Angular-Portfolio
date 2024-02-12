@@ -8,7 +8,6 @@ import { environment } from '../../environment';
 })
 export class EmailService {
   
-  // emailJsApiKey: string = process.env['EMAIL_JS_API_KEY']!; 
   emailJsApiKey = environment.emailJsApiKey;
 
   constructor() { }
