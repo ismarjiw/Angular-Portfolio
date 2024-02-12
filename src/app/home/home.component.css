@@ -10,7 +10,6 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 2rem;
 }
 
 .hero {
@@ -24,6 +23,16 @@ body {
 
 .job-title {
     color: #28a745; /* Success color */
+}
+
+/* Avatar and resume section */
+.about-avatar {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-resume {
+    margin-top: 20px;
 }
 
 /* Social icons */
@@ -51,6 +60,18 @@ body {
 .social-icon {
     width: 40px;
     height: 40px;
+}
+
+
+
+/* Email wrapper */
+.email-wrapper a {
+    color: #007bff; /* Primary color */
+    text-decoration: none;
+}
+
+.email-wrapper a:hover {
+    text-decoration: underline;
 }
 
 /* Button styles */
