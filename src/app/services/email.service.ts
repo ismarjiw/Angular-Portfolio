@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
 import * as emailjs from 'emailjs-com';
 import { EmailJSResponseStatus } from 'emailjs-com';
-import { environment } from '../../environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmailService {
   
-  emailJsApiKey = environment.emailJsApiKey;
+  emailJsApiKey = import.meta.env.EMAIL_JS_API_KEY;
 
   constructor() { }
 
