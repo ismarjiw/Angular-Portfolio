@@ -22,7 +22,7 @@ export class ProjectsComponent {
         'Tested extensively with JUnit tests ensuring thorough coverage of critical scenarios', 
         'Validated API endpoints using Postman and automated testing with Newman for end-to-end API testing'
       ],
-      stack: 'Java, Spring Boot, PostgreSQL, JUnit, Postman, Newman',
+      stack: 'Java Spring Boot PostgreSQL JUnit Postman Newman',
       imageUrl: '/assets/twitter.png',
       codeUrl: 'https://github.com/ismarjiw/spring-assessment-social-media-jan-2024-team-1',
       altText: 'A screenshot of the Tweet Controller and Tweet Service Implemenation classes in IntelliJ'

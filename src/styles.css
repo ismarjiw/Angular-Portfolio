@@ -1,4 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Common styles */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333;
+  }
+  
+  /* Dark Theme Styles */
+  .dark-theme {
+    --background-color: #121212;
+    --text-color: #ffffff;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  

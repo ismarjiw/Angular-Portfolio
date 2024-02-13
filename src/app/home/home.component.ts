@@ -1,18 +1,16 @@
-import { DarkmodeService } from './../services/darkmode.service';
 import { Component } from '@angular/core';
 import { AboutComponent } from '../about/about.component';
 import { GithubApiService } from '../services/github-api.service';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { MatSlideToggleChange, MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [AboutComponent, CommonModule, HttpClientModule, MatSlideToggleModule],
+  imports: [AboutComponent, CommonModule, HttpClientModule],
   templateUrl: './home.component.html',
-  styleUrl: './styles.scss',
-  providers: [ GithubApiService, DarkmodeService ]
+  styleUrl: './home.component.css',
+  providers: [ GithubApiService ]
 })
 export class HomeComponent {
   resumePath = '../assets/Resume.pdf'
@@ -24,10 +22,7 @@ export class HomeComponent {
   bio: string = '';
   avatarUrl: string = '';
 
-  isDarkMode = false;
-
-  constructor(private githubApiService: GithubApiService,
-              private darkModeService : DarkmodeService) {
+  constructor(private githubApiService: GithubApiService) {
     this.getUserDetails();
   }
 
@@ -53,16 +48,5 @@ export class HomeComponent {
         console.log('Failed to fetch user details', error);
       }
     });
-  }
-
-  ngOnInit() {
-    // Subscribe to dark mode changes
-    this.darkModeService.isDarkMode$.subscribe((isDarkMode: boolean) => {
-      this.isDarkMode = isDarkMode;
-    });
-  }
-
-  toggleDarkMode() {
-    this.darkModeService.toggleDarkMode();
   }
 }

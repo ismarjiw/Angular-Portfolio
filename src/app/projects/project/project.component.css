@@ -1,14 +1,27 @@
+  /* Add dark-theme class for dark theme */
+.dark-theme .all-projects {
+    background-color: #fff; /* Override with specific background color if needed */
+    color: #333; /* Override with specific text color if needed */
+}
+
 .all-projects {
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--background-color);
     margin-left: 7rem;
 }
 
 .specific-project {
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 20rem;
+}
+
+.dark-theme .specific-project {
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
     padding: 2rem;
     width: 20rem;
 }
@@ -45,10 +58,6 @@ font-weight: 800;
     cursor: pointer;
 }
 
-.custom-button svg {
-    line-height: 0.7rem;
-}
-
 .custom-button svg,
 .custom-button .button-text {
     vertical-align: middle; 
@@ -60,8 +69,13 @@ font-weight: 800;
         display: flex;
         justify-content: center;
         padding: 20px;
-        background-color: #fff;
+        background-color: var(--background-color);
         margin-left: 8rem;
+    }
+
+    .dark-theme .all-projects {
+        background-color: #fff; /* Override with specific background color if needed */
+        color: #333; /* Override with specific text color if needed */
     }
 
     .specific-project {
@@ -69,6 +83,22 @@ font-weight: 800;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 2rem;
         width: 50rem;
+        transition: box-shadow 0.3s ease;
+
+        &:hover {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Adjusted box-shadow on hover */
+        }
+    }
+
+    .dark-theme .specific-project {
+        border-radius: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        width: 50rem;
+
+        &:hover {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Adjusted box-shadow on hover */
+        }
     }
 
     .image {

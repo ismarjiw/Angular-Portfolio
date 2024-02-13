@@ -2,8 +2,20 @@ h2 {
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: var(--background-color);
     margin-left: 7rem;
-    color: black;
+    color: var(--text-color);
     margin-bottom: 1rem;
+}
+
+.dark-theme .projects-container {
+    background-color: #fff; /* Override with specific background color if needed */
+    color: #333; /* Override with specific text color if needed */
+}
+
+.projects-container {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
