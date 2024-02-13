@@ -43,3 +43,6 @@ Thumbs.db
 
 # Environment variables
 environment.ts
+
+# yaml
+firebase-deploy.yml
