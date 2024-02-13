@@ -2,12 +2,14 @@
 :root {
     --background-color: #ffffff;
     --text-color: #333;
+    --job-color: #3f51b5;
   }
   
   /* Dark Theme Styles */
   .dark-theme {
     --background-color: #121212;
     --text-color: #ffffff;
+    --job-color: #FFA500;
   }
   
   body {

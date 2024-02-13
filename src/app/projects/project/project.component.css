@@ -1,7 +1,11 @@
-  /* Add dark-theme class for dark theme */
+
+h3 {
+    font-weight: 500;
+}
+
 .dark-theme .all-projects {
-    background-color: #fff; /* Override with specific background color if needed */
-    color: #333; /* Override with specific text color if needed */
+    background-color: #fff;
+    color: #333; 
 }
 
 .all-projects {
@@ -9,31 +13,42 @@
     justify-content: center;
     padding: 20px;
     background-color: var(--background-color);
-    margin-left: 7rem;
+    margin-left: 5rem;
 }
 
 .specific-project {
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: .5px solid #444444;
     padding: 2rem;
-    width: 20rem;
+    width: 12rem;
+
+    &:hover {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    }
 }
 
 .dark-theme .specific-project {
     border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+    border: .5px solid #444444;
     padding: 2rem;
     width: 20rem;
+
+    &:hover {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    }
 }
 
 .project-stack {
-color: #f0b26f;
-font-weight: 800;
+font-weight: 500;
+color: rgb(255, 64, 129);
+margin-bottom: 1rem;
 }
 
 .image {
     height: 10rem;
-    width: auto;
+    width: 13rem;
     margin-top: 5px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -74,36 +89,38 @@ font-weight: 800;
     }
 
     .dark-theme .all-projects {
-        background-color: #fff; /* Override with specific background color if needed */
-        color: #333; /* Override with specific text color if needed */
+        background-color: #fff; 
+        color: #333; 
     }
 
     .specific-project {
         border-radius: 1rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: .5px solid #444444;
         padding: 2rem;
         width: 50rem;
         transition: box-shadow 0.3s ease;
 
         &:hover {
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Adjusted box-shadow on hover */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
         }
     }
 
     .dark-theme .specific-project {
         border-radius: 1rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: .5px solid #444444;
         padding: 2rem;
         width: 50rem;
 
         &:hover {
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Adjusted box-shadow on hover */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
         }
     }
 
     .image {
         height: 25rem;
-        width: auto;
+        width: 50rem;
         margin-top: 5px;
         margin-bottom: 20px;
         border-radius: 10px;

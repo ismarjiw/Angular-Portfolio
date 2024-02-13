@@ -1,4 +1,8 @@
-/* Base styles */
+
+h1 {
+    font-weight: 500;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: var(--background-color);
@@ -8,23 +12,24 @@ body {
   .main-content {
     padding: 20px;
     background-color: var(--background-color);
-    margin-left: 6rem;
+    margin-left: 5.5rem;
+    margin-top: 1rem;
   }
   
-  /* Add dark-theme class for dark theme */
+
   .dark-theme .main-content {
-    background-color: #fff; /* Override with specific background color if needed */
-    color: #333; /* Override with specific text color if needed */
+    background-color: #fff; 
+    color: #333; 
   }
 
 .about-content {
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    width: 50rem;
+    width: 13rem;
 
     &:hover {
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Adjusted box-shadow on hover */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -37,7 +42,7 @@ body {
     margin-top: 20px;
 }
 
-/* Button styles */
+
 button {
     border-radius: 8px;
     border: 1px solid transparent;
@@ -49,6 +54,7 @@ button {
     color: #fefefe;
     cursor: pointer;
     transition: border-color 0.25s;
+    width: 14rem;
 }
 
 .custom-button svg {
@@ -69,6 +75,17 @@ button {
 
     .about-resume {
         margin-top: 0;
-        margin-left: 20px; /* Add spacing between avatar and resume section */
+        margin-left: 20px; 
+    }
+
+    .about-content {
+        border-radius: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        width: 50rem;
+    
+        &:hover {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+        }
     }
 }

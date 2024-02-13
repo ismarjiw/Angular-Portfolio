@@ -8,12 +8,13 @@ body {
     padding: 20px;
     background-color: var(--background-color);
     margin-left: 6rem;
+    margin-top: 2rem;
   }
   
-  /* Add dark-theme class for dark theme */
+
   .dark-theme .main-content {
-    background-color: #fff; /* Override with specific background color if needed */
-    color: #333; /* Override with specific text color if needed */
+    background-color: #fff;
+    color: #333; 
   }
 
 .hero {
@@ -22,18 +23,17 @@ body {
 }
 
 .name {
-    color: #007bff; /* Primary color */
+    color: rgb(255, 64, 129);
 }
 
 .job-title {
-    color: #28a745; /* Success color */
+    color: var(--job-color);
 }
 
-/* Social icons */
 .social-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; 
+    align-items: center;
 }
 
 .social-icons {
@@ -65,12 +65,11 @@ body {
 }
 
 .github-photo > img {
-    /* margin-left: 46.5rem; */
     border-radius: 50%;
     height: 10rem;
 }
 
-/* Button styles */
+
 button {
     border-radius: 8px;
     border: 1px solid transparent;

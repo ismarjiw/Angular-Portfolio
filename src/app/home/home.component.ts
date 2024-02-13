@@ -3,11 +3,12 @@ import { AboutComponent } from '../about/about.component';
 import { GithubApiService } from '../services/github-api.service';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { TestimonialsComponent } from '../testimonials/testimonials.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [AboutComponent, CommonModule, HttpClientModule],
+  imports: [AboutComponent, CommonModule, HttpClientModule, TestimonialsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   providers: [ GithubApiService ]

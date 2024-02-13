@@ -38,12 +38,16 @@ nav a:hover {
 
 @media (min-width: 768px) {
   nav {
-    width: 200px; /* Adjust width for larger screens */
-    padding: 10px; /* Decrease padding for smaller screens */
+    width: 200px;
+    padding: 10px; 
   }
 
   nav a {
-    padding: 10px 20px; /* Adjust padding for larger screens */
+    padding: 10px 20px; 
+  }  
+
+  app-theme-toggle {
+    margin-right: 1rem;
   }
 }
 
@@ -59,3 +63,4 @@ nav a:hover {
     border-radius: 5px;
     transition: all 0.3s ease;
   }
+
