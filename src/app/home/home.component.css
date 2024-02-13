@@ -8,9 +8,7 @@ body {
 .main-content {
     padding: 20px;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 2rem;
+    margin-left: 6rem;
 }
 
 .hero {
@@ -53,6 +51,20 @@ body {
     height: 40px;
 }
 
+.github-photo-container, .github-bio-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-left: 0.25rem;
+    padding-bottom: 1rem;
+}
+
+.github-photo > img {
+    /* margin-left: 46.5rem; */
+    border-radius: 50%;
+    height: 10rem;
+}
+
 /* Button styles */
 button {
     border-radius: 8px;
@@ -70,32 +82,6 @@ button {
 /* Media query for larger screens */
 @media (min-width: 768px) {
     .main-content {
-        padding: 40px;
-    }
-
-    .about-avatar {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .about-resume {
-        margin-top: 0;
-        margin-left: 20px; /* Add spacing between avatar and resume section */
-    }
-
-    /* Contact info section */
-    .contact-info {
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-    .email-wrapper a {
-        color: #333;
-        text-decoration: none;
-    }
-
-    .email-wrapper a:hover {
-        text-decoration: underline;
+        margin-left: 2rem;
     }
 }

@@ -1,10 +1,14 @@
-<app-project
-    *ngFor="let project of projects"
-    [name]="project.name"
-    [description]="project.description"
-    [stack]="project.stack"
-    [codeUrl]="project.codeUrl"
-    [imageUrl]="project.imageUrl"
-    [altText]="project.altText"
-></app-project>
+<div class="projects-container">
+    <h2>Some things I've built</h2>
+    <app-project
+        *ngFor="let project of projects"
+        [name]="project.name"
+        [description]="project.description"
+        [stack]="project.stack"
+        [codeUrl]="project.codeUrl"
+        [imageUrl]="project.imageUrl"
+        [altText]="project.altText"
+    ></app-project>
+</div>
+
 

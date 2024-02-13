@@ -6,11 +6,18 @@ body {
 }
 
 .main-content {
+    display: flex;
+    justify-content: center;
     padding: 20px;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 12rem;
+    margin-left: 6rem;
+}
+
+.about-content {
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 50rem;
 }
 
 .hero {
@@ -18,61 +25,8 @@ body {
     margin-bottom: 20px;
 }
 
-.name {
-    color: #007bff; /* Primary color */
-}
-
-.job-title {
-    color: #28a745; /* Success color */
-}
-
-/* Avatar and resume section */
-.about-avatar {
-    display: flex;
-    flex-direction: column;
-}
-
 .about-resume {
     margin-top: 20px;
-}
-
-/* Social icons */
-.social-container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-}
-
-.social-icons {
-    padding: 0;
-    margin: 0;
-}
-
-.social-icons ul {
-    list-style: none; 
-    display: flex; 
-    margin-right: 2.75rem;
-}
-
-.social-icons li {
-    margin-left: 1rem;
-}
-
-.social-icon {
-    width: 40px;
-    height: 40px;
-}
-
-
-
-/* Email wrapper */
-.email-wrapper a {
-    color: #007bff; /* Primary color */
-    text-decoration: none;
-}
-
-.email-wrapper a:hover {
-    text-decoration: underline;
 }
 
 /* Button styles */
@@ -92,32 +46,11 @@ button {
 /* Media query for larger screens */
 @media (min-width: 768px) {
     .main-content {
-        padding: 40px;
-    }
-
-    .about-avatar {
-        flex-direction: row;
-        align-items: center;
+        margin-left: 15rem;
     }
 
     .about-resume {
         margin-top: 0;
         margin-left: 20px; /* Add spacing between avatar and resume section */
-    }
-
-    /* Contact info section */
-    .contact-info {
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-    .email-wrapper a {
-        color: #333;
-        text-decoration: none;
-    }
-
-    .email-wrapper a:hover {
-        text-decoration: underline;
     }
 }

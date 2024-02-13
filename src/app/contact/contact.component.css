@@ -1,21 +1,45 @@
 .contact-container {
-    margin-left: 15rem;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-left: 6rem;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 5px; 
     width: 55%;
-    margin-left: 350px;
     margin-bottom: 150px;
 }
 
-.contact-form input, textarea{
-    width: 60%; 
-    border-radius: 10px;
+.contact-form mat-form-field{
+    display: flex;
+    flex-direction: column;
 }
 
-.contact-form button {
-    width: 30%;
+h3 {
+    margin-bottom: 0.5rem; 
+}
+
+.contact-h-tags {
+    margin-bottom: 1rem;
+}
+
+.spinner {
+    margin-left: 25rem;
+}
+
+button {
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    padding: 0.25rem 1rem;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    color: #fefefe;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    text-align: left;
 }

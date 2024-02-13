@@ -1,16 +1,30 @@
 <div class="contact-container">
   <div class="contact-form">
-    <h2>Get In Touch</h2>
-    <h3>I'm currently looking for any new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</h3>
+    <div class="contact-h-tags">
+      <h2>Get In Touch</h2>
+    <h3>I'm currently looking for any new opportunities.</h3>
+    <h3>Whether you have a question or just want to say hi, I'll try my best to get back to you!</h3>
+    </div>
     <form (ngSubmit)="onSubmit(form, $event)" #form="ngForm">
-      <input type="text" placeholder="Name" [(ngModel)]="name" name="name" required /><br />
-      <input type="email" placeholder="Email" [(ngModel)]="email" name="email" required /><br />
-      <textarea placeholder="Message" [(ngModel)]="message" name="message" required></textarea><br />
-      <button type="submit">Say Hello</button>
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput type="text" [(ngModel)]="name" name="name" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" [(ngModel)]="email" name="email" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Message</mat-label>
+        <textarea matInput [(ngModel)]="message" name="message" required></textarea>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">Say Hello</button>
     </form>
     <div *ngIf="loading" class="spinner"> 
       <mat-spinner></mat-spinner>
     </div>
-    
   </div>
 </div>
+
