@@ -60,12 +60,17 @@ p {
     .testimonial-card {
         width: 80%; 
         height: auto;
-        background-color: #f0f0f0; 
+        background-color: var(--background-color);
+        color: var(--text-color); 
         border: 0.0625rem solid #ccc; 
         border-radius: 0.625rem; 
         padding: 1.25rem;
         margin: 1.25rem; 
         animation: carousel 10s forwards; 
+
+        &:hover {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+        }
     }
 
     .testimonial-photo {
