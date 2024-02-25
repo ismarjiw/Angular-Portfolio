@@ -19,4 +19,16 @@ h1 {
 .projects-container {
     background-color: var(--background-color);
     color: var(--text-color);
+    animation: slide-up-fade-in 2s ease-in-out;
 }
+
+@keyframes slide-up-fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }

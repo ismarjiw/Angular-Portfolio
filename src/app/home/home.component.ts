@@ -4,6 +4,7 @@ import { GithubApiService } from '../services/github-api.service';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { TestimonialsComponent } from '../testimonials/testimonials.component';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-home',
@@ -23,7 +24,8 @@ export class HomeComponent {
   bio: string = '';
   avatarUrl: string = '';
 
-  constructor(private githubApiService: GithubApiService) {
+  constructor(
+    private githubApiService: GithubApiService) {
     this.getUserDetails();
   }
 

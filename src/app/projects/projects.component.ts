@@ -22,7 +22,7 @@ export class ProjectsComponent {
         'Tested extensively with JUnit tests ensuring thorough coverage of critical scenarios', 
         'Validated API endpoints using Postman and automated testing with Newman for end-to-end API testing'
       ],
-      stack: 'Java Spring Boot PostgreSQL JUnit Postman Newman',
+      stack: 'Java | Spring Boot | PostgreSQL | JUnit | Postman | Newman',
       imageUrl: '/assets/twitter.png',
       codeUrl: 'https://github.com/ismarjiw/spring-assessment-social-media-jan-2024-team-1',
       altText: 'A screenshot of the Tweet Controller and Tweet Service Implemenation classes in IntelliJ'
@@ -34,7 +34,7 @@ export class ProjectsComponent {
         'Implemented FastAPI for the backend server, ensuring efficient handling of summarization requests',
         'Designed a user-friendly interface by utilizing Vite to create a responsive and intuitive frontend for an enhanced user experience'
       ],
-      stack: 'JavaScript React CSS Python FastAPI',
+      stack: 'JavaScript | React | CSS | Python | FastAPI',
       codeUrl: 'https://github.com/ismarjiw/text-summarizer',
       imageUrl: '/assets/summarizer.png',
       altText: 'A screenshot of the frontpage of Text Summarizer'
@@ -46,7 +46,7 @@ export class ProjectsComponent {
         'Facilitated collaboration by allowing users to share and work on shopping lists with others, promoting teamwork and project management',
         'Ensured accessibility across multiple platforms, making the web app available on various devices and browsers for a seamless user experience'
       ],
-      stack: 'JavaScript React TailwindCSS Firebase',
+      stack: 'JavaScript | React | TailwindCSS | Firebase',
       codeUrl: 'https://github.com/the-collab-lab/tcl-64-smart-shopping-list',
       imageUrl: '/assets/listify.png',
       altText: 'A screenshot of the frontpage of Listify'
@@ -58,7 +58,7 @@ export class ProjectsComponent {
         "Implemented a feature to track and log users' meditation sessions through chart.js, providing insights into a user’s meditation habits and progress over time",
         'Curated and integrated guided meditation playlists, offering users a variety of calming and focused meditation sessions to choose from'
       ],
-      stack: 'JavaScript React TailwindCSS Python Flask Spotify API Google API AWS',
+      stack: 'JavaScript | React | TailwindCSS | Python | Flask | Spotify API | Google API | AWS',
       codeUrl: 'https://github.com/ismarjiw/Mind-Meter',
       imageUrl: '/assets/mindmeter.png',
       altText: 'A screenshot of the frontpage of Mind Meter'
