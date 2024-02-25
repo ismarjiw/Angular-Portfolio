@@ -10,9 +10,16 @@ import { Component, Input } from '@angular/core';
 })
 export class ProjectComponent {
   @Input() name: string = ""
-  @Input() description: string = ""
+  @Input() description: string[] | string = []
   @Input() stack: string = ""
   @Input() imageUrl: string = ""
   @Input() codeUrl: string = ""
   @Input() altText: string = ""
+
+  getDescriptionArray(): string[] {
+    if (typeof this.description === 'string') {
+      return [this.description];
+    }
+    return this.description;
+  }
 }

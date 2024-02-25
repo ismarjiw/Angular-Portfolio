@@ -1,7 +1,9 @@
 <div class="all-projects">
     <div class="specific-project">
     <h3>{{name}}</h3>
-    <h4>{{description}}</h4> 
+    <ul class="description-list">
+        <li *ngFor="let bullet of getDescriptionArray()">{{bullet}}</li>
+    </ul>
     <h4 class="project-stack">{{stack}}</h4>
     <div class="project-image">
         <img class="image" [src]="imageUrl" [alt]="altText">
