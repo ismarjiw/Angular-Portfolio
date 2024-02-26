@@ -13,6 +13,19 @@ export class ProjectsComponent {
 
   projects = [
     {
+      name: 'Name That Tune',
+      description: [
+        "Developed an Angular application interfacing with Spotify's API to create a music-themed guessing game with dynamic audio playback and configurable game settings",
+        'Defined technical architecture and planned API interactions with team member, wireframing components in Figma to align with business requirements',
+        'Implemented local storage functionality for saving both game configuration data and game session data, ensuring seamless user experience across sessions',
+        'Crafted and deployed an Angular service class leveraging RxJS for managing API requests to Spotify, facilitating token retrieval, genre loading, playlist fetching, and track retrieval for seamless data management'
+      ],
+      stack: 'TypeScript | Angular | RxJS | Spotify API',
+      imageUrl: '/assets/ntt.png',
+      codeUrl: 'https://github.com/ismarjiw/Name-That-Tune',
+      altText: 'A screenshot of the homepage of Name That Tune'
+    },
+    {
       name: 'Twitter API',
       description: [
         'Designed a RESTful Spring Boot application that mirrors the backend infrastructure and emulates the functionality of a Twitter API backend',
