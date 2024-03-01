@@ -13,6 +13,21 @@ export class ProjectsComponent {
 
   projects = [
     {
+      name: 'TeamFlow',
+      description: [
+        "Developed a RESTful web application that emulates a project management portal where users can view or create announcements, teams, projects, and a user directory ",
+        'Implemented role-based authorization to control access and permissions for different user types',
+        'Designed database schema and implemented CRUD operations to manage user roles, companies, announcements, teams, and project data',
+        'Built back-end REST APIs using Spring Boot to retrieve and modify data in a PostgreSQL database',
+        'Created front-end views per business requirements in Angular that call REST APIs to display data and handle form submissions',
+        'Thoroughly tested back-end REST API endpoints using Postman to validate functionality and error handling '
+      ],
+      stack: 'Java | TypeScript | Spring Boot | Angular | PostgreSQL | Postman',
+      imageUrl: '/assets/final.png',
+      codeUrl: 'https://github.com/fasttrackd-student-work/angular-group-final-jan-2024-green-team',
+      altText: 'A screenshot of the homepage of TeamFlow'
+    },
+    {
       name: 'Name That Tune',
       description: [
         "Developed an Angular application interfacing with Spotify's API to create a music-themed guessing game with dynamic audio playback and configurable game settings",
