@@ -24,7 +24,7 @@ export class ProjectsComponent {
       ],
       stack: 'Java | TypeScript | Spring Boot | Angular | PostgreSQL | Postman',
       imageUrl: '/assets/final.png',
-      codeUrl: 'https://github.com/fasttrackd-student-work/angular-group-final-jan-2024-green-team',
+      codeUrl: 'https://github.com/ismarjiw/TeamFlow',
       altText: 'A screenshot of the homepage of TeamFlow'
     },
     {
