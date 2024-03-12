@@ -23,7 +23,7 @@ export class ProjectsComponent {
         'Thoroughly tested back-end REST API endpoints using Postman to validate functionality and error handling '
       ],
       stack: 'Java | TypeScript | Spring Boot | Angular | PostgreSQL | Postman',
-      imageUrl: '/assets/final.png',
+      imageUrl: '/assets/tf.png',
       codeUrl: 'https://github.com/ismarjiw/TeamFlow',
       altText: 'A screenshot of the homepage of TeamFlow'
     },
