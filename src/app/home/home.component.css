@@ -22,12 +22,18 @@ body {
     font-family: 'Jacquarda Bastarda 9', sans-serif; /* Adding font-family */
 }
 
+.intro {
+    font-size: 1rem;
+}
+
 .name {
     color: rgb(255, 64, 129);
+    font-size: 2.5rem;
 }
 
 .job-title {
     color: var(--job-color);
+    font-size: 1.5rem;
 }
 
 .social-container {
@@ -74,10 +80,29 @@ body {
     padding-bottom: 1rem;
 }
 
-.github-photo > img {
-    border-radius: 50%;
-    height: 10rem;
+.github-photo {
+    padding-top: 1rem;
 }
+
+.github-photo img {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    animation: glowing 3s infinite;
+  }
+  
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 64, 129, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 15px 10px rgba(255, 64, 129, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 64, 129, 0.7);
+    }
+  }
 
 
 button {
@@ -114,5 +139,19 @@ button {
 
     .github-svg, .linkedin-svg {
         fill: var(--fill-color);
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+    
+    .name {
+        color: rgb(255, 64, 129);
+        font-size: 3rem;
+    }
+    
+    .job-title {
+        color: var(--job-color);
+        font-size: 2rem;
     }
 }

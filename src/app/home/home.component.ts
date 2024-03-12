@@ -4,7 +4,6 @@ import { GithubApiService } from '../services/github-api.service';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { TestimonialsComponent } from '../testimonials/testimonials.component';
-import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +11,7 @@ import { ThemeService } from '../services/theme.service';
   imports: [AboutComponent, CommonModule, HttpClientModule, TestimonialsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
-  providers: [ GithubApiService ]
+  providers: [ GithubApiService ],
 })
 export class HomeComponent {
   resumePath = '../assets/Resume.pdf'
@@ -29,6 +28,18 @@ export class HomeComponent {
     this.getUserDetails();
   }
 
+  getUserDetails() {
+    this.githubApiService.getUserWithToken(this.username).subscribe({
+      next: (data: any) => {
+        this.bio = data.bio;
+        this.avatarUrl = data.avatar_url;
+      },
+      error: (error: any) => {
+        console.log('Failed to fetch user details', error);
+      }
+    });
+  }
+
   // getUserDetails() {
   //   this.githubApiService.getUser(this.username).subscribe({
   //     next: (data: any) => {
@@ -41,15 +52,4 @@ export class HomeComponent {
   //   });
   // }
 
-  getUserDetails() {
-    this.githubApiService.getUserWithToken(this.username).subscribe({
-      next: (data: any) => {
-        this.bio = data.bio;
-        this.avatarUrl = data.avatar_url;
-      },
-      error: (error: any) => {
-        console.log('Failed to fetch user details', error);
-      }
-    });
-  }
 }
