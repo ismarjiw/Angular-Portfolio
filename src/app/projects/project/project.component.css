@@ -78,6 +78,10 @@ margin-bottom: 1rem;
     padding: 0.25rem; 
 }
 
+.demo-button {
+    margin-left: 1rem;
+}
+
 /* Media query for larger screens */
 @media (min-width: 768px) {
     .all-projects {

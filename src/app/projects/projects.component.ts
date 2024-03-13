@@ -38,6 +38,7 @@ export class ProjectsComponent {
       stack: 'TypeScript | Angular | RxJS | Spotify API',
       imageUrl: '/assets/ntt.png',
       codeUrl: 'https://github.com/ismarjiw/Name-That-Tune',
+      demoUrl: 'https://meet-name-that-tune.netlify.app/',
       altText: 'A screenshot of the homepage of Name That Tune'
     },
     {
@@ -76,6 +77,7 @@ export class ProjectsComponent {
       ],
       stack: 'JavaScript | React | TailwindCSS | Firebase',
       codeUrl: 'https://github.com/the-collab-lab/tcl-64-smart-shopping-list',
+      demoUrl: 'https://tcl-64-smart-shopping-list.web.app/',
       imageUrl: '/assets/listify.png',
       altText: 'A screenshot of the frontpage of Listify'
     },

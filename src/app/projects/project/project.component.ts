@@ -15,6 +15,7 @@ export class ProjectComponent {
   @Input() stack: string = ""
   @Input() imageUrl: string = ""
   @Input() codeUrl: string = ""
+  @Input() demoUrl: string = ""
   @Input() altText: string = ""
 
   getDescriptionArray(): string[] {
