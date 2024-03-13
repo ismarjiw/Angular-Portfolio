@@ -4,6 +4,7 @@
     --text-color: #333;
     --job-color: #3f51b5;
     --fill-color: black;
+    --alt-text-style: "Rubik", sans-serif !important; 
   }
   
   /* Dark Theme Styles */
@@ -15,7 +16,26 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
+  }
+
+  * {
+    font-family: var(--alt-text-style);
+  }
+
+  .mat-h1, .mat-headline-5, .mat-typography .mat-h1, .mat-typography .mat-headline-5, .mat-typography h1 {
+    font-family: var(--alt-text-style);
+  }
+
+  .mat-h2, .mat-headline-4, .mat-typography .mat-h2, .mat-typography .mat-headline-4, .mat-typography h2 {
+    font-family: var(--alt-text-style);
+  }
+
+  .mat-h3, .mat-subtitle-1, .mat-typography .mat-h3, .mat-typography .mat-subtitle-1, .mat-typography h3 {
+    font-family: var(--alt-text-style);
+  }
+
+  .mat-h4, .mat-body-1, .mat-typography .mat-h4, .mat-typography .mat-body-1, .mat-typography h4 {
+    font-family: var(--alt-text-style);
   }
