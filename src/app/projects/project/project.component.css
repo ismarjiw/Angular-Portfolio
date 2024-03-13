@@ -79,7 +79,7 @@ margin-bottom: 1rem;
 }
 
 .demo-button {
-    margin-left: 1rem;
+    margin-top: 1rem;
 }
 
 /* Media query for larger screens */
@@ -128,6 +128,11 @@ margin-bottom: 1rem;
         margin-top: 5px;
         margin-bottom: 20px;
         border-radius: 10px;
+    }
+
+    .demo-button {
+        margin-left: 1rem;
+        margin-top: 0rem;
     }
 } 
 
