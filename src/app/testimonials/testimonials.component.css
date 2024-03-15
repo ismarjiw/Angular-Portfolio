@@ -44,7 +44,7 @@ p {
     height: 55rem;
     background-color: var(--background-color); 
     color: var(--text-color); 
-    border: 0.0625rem solid #ccc; 
+    border: 0.15rem solid var(--primary-color); 
     border-radius: 0.625rem; 
     padding: 1.25rem;
     margin: 1.25rem; 
@@ -57,9 +57,10 @@ p {
 
 .testimonial-photo {
     border-radius: 50%;
-    height: 5rem;
-    margin-left: 6rem;
+    height: 7rem;
+    margin-left: 3rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Media query for smaller screen sizes (e.g., mobile devices) */
@@ -75,7 +76,7 @@ p {
         height: auto;
         background-color: var(--background-color);
         color: var(--text-color); 
-        border: 0.0625rem solid #ccc; 
+        border: 0.15rem solid var(--primary-color); 
         border-radius: 0.625rem; 
         padding: 1.25rem;
         margin: 1.25rem; 
@@ -88,7 +89,7 @@ p {
 
     .testimonial-photo {
         border-radius: 50%;
-        height: 5rem;
-        margin-right: 0.1rem;
+        height: 7rem;
+        margin-left: 2.25rem;
     }
 }

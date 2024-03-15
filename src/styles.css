@@ -4,6 +4,7 @@
     --text-color: #333;
     --job-color: #3f51b5;
     --fill-color: black;
+    --primary-color: #3f51b5;
     --alt-text-style: "Rubik", sans-serif !important; 
   }
   
@@ -12,6 +13,7 @@
     --background-color: #121212;
     --text-color: #ffffff;
     --job-color: #FFA500;
+    --primary-color: #FFA500;
     --fill-color: white;
   }
   
